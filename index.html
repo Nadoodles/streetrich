@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Street Rich Fellas — Los Angeles</title>
+  <meta name="description" content="Street Rich Fellas — heavyweight streetwear from Los Angeles, California. Built from the streets. Made for legacy.">
+  <meta name="theme-color" content="#0a0a0a">
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=JetBrains+Mono:wght@400;500&family=Mr+Dafoe&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/products.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#shop">Skip to shop</a>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="flashbang" aria-hidden="true"></div>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="site-header" id="header">
+    <div class="announce" aria-label="Announcements">
+      <div class="announce-track">
+        <span>The Cherub Drop — coming soon <i>✦</i> Free shipping on orders $150+ <i>✦</i> 400 GSM heavyweight cotton <i>✦</i> Los Angeles, California <i>✦</i> Built from the streets. Made for legacy. <i>✦</i></span>
+        <span aria-hidden="true">The Cherub Drop — coming soon <i>✦</i> Free shipping on orders $150+ <i>✦</i> 400 GSM heavyweight cotton <i>✦</i> Los Angeles, California <i>✦</i> Built from the streets. Made for legacy. <i>✦</i></span>
+      </div>
+    </div>
+    <nav class="nav" aria-label="Main">
+      <div class="nav-left">
+        <button class="nav-menu" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+          <span></span><span></span>
+        </button>
+        <ul class="nav-links">
+          <li><a href="#shop">Shop</a></li>
+          <li><a href="#lookbook">Lookbook</a></li>
+          <li><a href="#story">Story</a></li>
+        </ul>
+      </div>
+      <a class="nav-logo" href="#top" aria-label="Street Rich Fellas — home">
+        <svg class="nav-crown" viewBox="0 0 120 84" aria-hidden="true"><use href="#crown"/></svg>
+        <span>Street Rich Fellas</span>
+      </a>
+      <div class="nav-right">
+        <a class="nav-join" href="#join">Join</a>
+        <button class="nav-bag" id="bagBtn" type="button" aria-controls="drawer">Bag (<span id="bagCount">0</span>)</button>
+      </div>
+    </nav>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu" hidden>
+    <a href="#shop">Shop</a>
+    <a href="#drop">Next Drop</a>
+    <a href="#lookbook">Lookbook</a>
+    <a href="#story">Story</a>
+    <a href="#join">Join the Fellas</a>
+  </div>
+
+  <!-- Shared crown symbol -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <linearGradient id="goldGrad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#fbe9a6"/>
+        <stop offset=".45" stop-color="#d4af37"/>
+        <stop offset="1" stop-color="#7f6115"/>
+      </linearGradient>
+      <symbol id="crown" viewBox="0 0 120 84">
+        <path d="M10 66 L4 20 L34 42 L60 6 L86 42 L116 20 L110 66 Z" fill="url(#goldGrad)"/>
+        <rect x="10" y="70" width="100" height="11" rx="2" fill="url(#goldGrad)"/>
+        <circle cx="4" cy="17" r="5" fill="url(#goldGrad)"/>
+        <circle cx="60" cy="6" r="5.5" fill="url(#goldGrad)"/>
+        <circle cx="116" cy="17" r="5" fill="url(#goldGrad)"/>
+        <circle cx="60" cy="52" r="5" fill="#c4161f"/>
+        <circle cx="34" cy="56" r="3.5" fill="#f4f1ea"/>
+        <circle cx="86" cy="56" r="3.5" fill="#f4f1ea"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <main>
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="top" aria-label="Street Rich Fellas">
+      <!-- Drop the client's clip at assets/video/hero.mp4 and it replaces the animated scene automatically -->
+      <video class="hero-video" autoplay muted loop playsinline preload="auto" aria-hidden="true">
+        <source src="assets/video/hero.mp4" type="video/mp4">
+      </video>
+      <div class="hero-scene" aria-hidden="true">
+        <div class="scene-bokeh" id="bokeh"></div>
+        <div class="smoke s1"></div>
+        <div class="smoke s2"></div>
+        <div class="smoke s3"></div>
+        <span class="hl hl-l"></span>
+        <span class="hl hl-r"></span>
+        <div class="sweep"></div>
+      </div>
+      <div class="hero-shade" aria-hidden="true"></div>
+
+      <div class="hero-inner">
+        <svg class="hero-crown" viewBox="0 0 120 84" aria-hidden="true"><use href="#crown"/></svg>
+        <h1 class="hero-logo"><span>Street Rich</span> <span>Fellas</span></h1>
+        <p class="hero-tag">Built from the streets <b>—</b> Made for legacy</p>
+        <div class="hero-cta">
+          <a class="btn btn-light" href="#shop">Shop the Drop</a>
+          <a class="btn btn-ghost" href="#lookbook">View Lookbook</a>
+        </div>
+        <a class="hero-next" href="#drop"><span class="live-dot"></span>Next drop <b id="heroCountdown">—</b></a>
+      </div>
+      <a class="scroll-cue" href="#drop" aria-label="Scroll down"><span></span></a>
+    </section>
+
+    <!-- ===================== FEATURED DROP ===================== -->
+    <section class="drop" id="drop" aria-labelledby="dropName">
+      <div class="drop-media" data-flash>
+        <div class="drop-art" id="dropArt"></div>
+        <div class="drop-toggle" role="group" aria-label="Product view">
+          <button type="button" data-view="front">Front</button>
+          <button type="button" data-view="back" class="is-active">Back</button>
+        </div>
+      </div>
+      <div class="drop-info" data-flash>
+        <p class="eyebrow">Next drop</p>
+        <h2 class="gothic drop-title" id="dropName">The Cherub Drop</h2>
+        <p class="drop-copy" id="dropBlurb"></p>
+        <div class="countdown" id="countdown" role="timer" aria-live="off">
+          <div><span data-unit="d">00</span><small>Days</small></div>
+          <div><span data-unit="h">00</span><small>Hours</small></div>
+          <div><span data-unit="m">00</span><small>Mins</small></div>
+          <div><span data-unit="s">00</span><small>Secs</small></div>
+        </div>
+        <ul class="specs">
+          <li>400 GSM heavyweight</li>
+          <li>100% cotton</li>
+          <li>3D puff print</li>
+          <li>Boxy, dropped shoulder</li>
+        </ul>
+        <div class="drop-cta">
+          <a class="btn btn-light" href="#join">Get Early Access</a>
+          <a class="btn btn-ghost" href="#shop">Shop Current Pieces</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SHOP ===================== -->
+    <section class="shop" id="shop" aria-labelledby="shopTitle">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Shop</p>
+          <h2 class="display shop-title" id="shopTitle">The Collection</h2>
+        </div>
+        <div class="shop-tools">
+          <span class="shop-count" id="shopCount">09 pieces</span>
+          <div class="filters" role="group" aria-label="Filter products">
+            <button type="button" class="chip is-active" data-filter="all">All</button>
+            <button type="button" class="chip" data-filter="tops">Tops</button>
+            <button type="button" class="chip" data-filter="bottoms">Bottoms</button>
+            <button type="button" class="chip" data-filter="accessories">Accessories</button>
+          </div>
+        </div>
+      </div>
+      <div class="grid" id="grid"></div>
+    </section>
+
+    <!-- ===================== QUALITY STRIP ===================== -->
+    <section class="quality" aria-label="Quality">
+      <ul>
+        <li data-flash>
+          <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M11 9a5 5 0 0 1 10 0"/><path d="M7 11h18l2 16H5z"/></svg>
+          <strong>400 GSM</strong><span>Heavyweight</span>
+        </li>
+        <li data-flash>
+          <svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="13" r="4"/><circle cx="10" cy="17" r="4"/><circle cx="22" cy="17" r="4"/><path d="M16 21v8"/></svg>
+          <strong>100%</strong><span>Cotton</span>
+        </li>
+        <li data-flash>
+          <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M4 22l12 6 12-6"/><path d="M4 16l12 6 12-6"/><path d="M4 10l12-6 12 6-12 6z"/></svg>
+          <strong>3D Puff</strong><span>Print</span>
+        </li>
+        <li data-flash>
+          <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M5 24L3 9l8 6 5-9 5 9 8-6-2 15z"/><path d="M5 28h22"/></svg>
+          <strong>Premium</strong><span>Quality</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ===================== LOOKBOOK ===================== -->
+    <section class="lookbook" id="lookbook" aria-labelledby="lbTitle">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Lookbook</p>
+          <h2 class="gothic lb-title" id="lbTitle">The Fellas</h2>
+          <p class="lb-sub">Worn by the ones who built it. Los Angeles, CA.</p>
+        </div>
+        <div class="lb-controls">
+          <button type="button" id="lbPrev" aria-label="Previous looks">←</button>
+          <button type="button" id="lbNext" aria-label="Next looks">→</button>
+        </div>
+      </div>
+      <div class="lb-track" id="lbTrack" tabindex="0" aria-label="Lookbook — scroll sideways"></div>
+    </section>
+
+    <!-- ===================== MANIFESTO ===================== -->
+    <section class="manifesto" id="story" aria-label="Our story">
+      <svg class="m-crown" viewBox="0 0 120 84" aria-hidden="true"><use href="#crown"/></svg>
+      <h2 class="m-head" data-flash>
+        <span class="m-line1">Built from the streets.</span>
+        <span class="m-line2">Made for Legacy.</span>
+      </h2>
+      <p class="m-copy" data-flash>Street Rich Fellas is more than a brand. It's a movement rooted in hustle, family and Los Angeles. Every piece is cut heavy and printed loud for the ones who came up the hard way and never forgot where they came from.</p>
+      <blockquote class="m-quote" data-flash>
+        <p><span class="q-a">“Whatever you have in mind, you can make it happen.</span> <span class="q-b">Just don't ever forget humility.”</span></p>
+        <cite>— What Mama told us</cite>
+      </blockquote>
+    </section>
+
+    <!-- ===================== JOIN ===================== -->
+    <section class="join" id="join" aria-label="Join the Fellas">
+      <!-- Dice discount game: disabled until the client decides on discounts.
+           To re-enable, uncomment this panel (the JS turns on automatically).
+      <div class="panel dice-panel" data-flash>
+        <p class="eyebrow">Feeling lucky?</p>
+        <h2 class="display panel-title">Roll the Dice</h2>
+        <p class="panel-copy">Roll for a discount on your first order. Doubles hit harder. Lucky 7 or 11 hits hardest.</p>
+        <div class="dice" aria-hidden="true">
+          <div class="die" id="die1"></div>
+          <div class="die" id="die2"></div>
+        </div>
+        <button type="button" class="btn btn-light" id="rollBtn">Roll</button>
+        <div class="roll-result" id="rollResult" aria-live="polite"></div>
+      </div>
+      -->
+
+      <div class="panel signup-panel" data-flash>
+        <div class="signup-intro">
+          <p class="eyebrow">The newsletter</p>
+          <h2 class="display panel-title">Join the Fellas</h2>
+          <p class="panel-copy">Drops sell out. Get the email before anyone else, plus first dibs on restocks and events.</p>
+        </div>
+        <form class="signup" id="signup" novalidate>
+          <label class="field">
+            <span>Email</span>
+            <input type="email" name="email" autocomplete="email" placeholder="you@email.com" required>
+          </label>
+          <button type="submit" class="btn btn-light btn-block">Subscribe</button>
+          <p class="fine">Demo form — nothing is sent. No spam. Unsubscribe anytime.</p>
+          <p class="form-msg" id="formMsg" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <p class="footer-logo">Street Rich Fellas</p>
+    <div class="footer-cols">
+      <div>
+        <h3>Shop</h3>
+        <ul>
+          <li><a href="#shop" data-filter-link="all">All</a></li>
+          <li><a href="#shop" data-filter-link="tops">Tops</a></li>
+          <li><a href="#shop" data-filter-link="bottoms">Bottoms</a></li>
+          <li><a href="#shop" data-filter-link="accessories">Accessories</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Help</h3>
+        <ul>
+          <li><a href="#">Shipping</a></li>
+          <li><a href="#">Returns</a></li>
+          <li><a href="#">Size Guide</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Follow</h3>
+        <ul>
+          <li><a href="https://www.instagram.com/streetrichfellasofficial/" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="#">TikTok</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Home</h3>
+        <ul>
+          <li>Los Angeles,</li>
+          <li>California</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Street Rich Fellas</span>
+      <span>Built from the streets. Made for legacy.</span>
+    </div>
+  </footer>
+
+  <!-- ===================== BAG DRAWER ===================== -->
+  <div class="overlay" id="overlay"></div>
+  <aside class="drawer" id="drawer" aria-label="Shopping bag" aria-hidden="true" tabindex="-1">
+    <div class="drawer-head">
+      <h2>Bag <span id="drawerCount"></span></h2>
+      <button type="button" class="drawer-close" id="drawerClose" aria-label="Close bag">Close</button>
+    </div>
+    <div class="ship-bar" id="shipBar"></div>
+    <div class="drawer-body" id="cartItems"></div>
+    <div class="drawer-foot" id="cartFoot">
+      <!-- Promo codes: disabled until the client decides on discounts. Uncomment to re-enable.
+      <form class="promo" id="promoForm">
+        <input type="text" id="promoInput" placeholder="Promo code" aria-label="Promo code" autocomplete="off">
+        <button type="submit" class="btn btn-ghost btn-sm">Apply</button>
+      </form>
+      -->
+      <div class="sum-row"><span>Subtotal</span><span id="subtotal">$0.00</span></div>
+      <div class="sum-row discount" id="discountRow" hidden><span id="discountLabel">Discount</span><span id="discount">−$0.00</span></div>
+      <div class="sum-row"><span>Shipping</span><span id="shipping">Calculated at checkout</span></div>
+      <div class="sum-row total"><span>Total</span><span id="total">$0.00</span></div>
+      <button type="button" class="btn btn-light btn-block" id="checkoutBtn">Checkout</button>
+    </div>
+  </aside>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
